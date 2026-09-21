@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary-container": "#dae2fd", "tertiary-fixed": "#6ffbbe", "on-secondary-fixed": "#131b2e", "on-error": "#ffffff", "surface-tint": "#bf0715", "surface-container-lowest": "#ffffff", "inverse-on-surface": "#eaf1ff", "on-tertiary-fixed-variant": "#005236", "on-surface": "#0b1c30", "on-primary-container": "#fff6f5", "tertiary-fixed-dim": "#4edea3", "background": "#f8f9ff", "tertiary-container": "#008259", "outline-variant": "#e6bdb8", "inverse-primary": "#ffb4ab", "surface-bright": "#f8f9ff", "on-tertiary-fixed": "#002113", "inverse-surface": "#213145", "surface-container-low": "#eff4ff", "on-secondary-fixed-variant": "#3f465c", "primary-fixed-dim": "#ffb4ab", "primary-container": "#dc2626", "surface-variant": "#d3e4fe", "tertiary": "#006645", "error-container": "#ffdad6", "on-primary-fixed-variant": "#93000b", "on-background": "#0b1c30", "surface-container": "#e5eeff", "surface-dim": "#cbdbf5", "secondary-fixed-dim": "#bec6e0", "on-tertiary-container": "#e1ffec", "primary": "#b70011", "on-primary": "#ffffff", "on-primary-fixed": "#410002", "on-tertiary": "#ffffff", "on-secondary-container": "#5c647a", "on-surface-variant": "#5c403c", "surface-container-high": "#dce9ff", "on-error-container": "#93000a", "secondary-fixed": "#dae2fd", "surface": "#f8f9ff", "outline": "#916f6b", "error": "#ba1a1a", "on-secondary": "#ffffff", "primary-fixed": "#ffdad6", "surface-container-highest": "#d3e4fe", "secondary": "#565e74" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1.5rem", "margin-desktop": "2rem", "space-sm": "0.5rem", "margin": "1rem", "space-xs": "0.25rem", "gutter-desktop": "1.5rem", "margin-tablet": "1.5rem", "space-md": "1rem", "gutter": "1.25rem", "space-xl": "2rem" }, "fontFamily": { "label-sm": ["Inter"], "body-sm": ["Inter"], "body-lg": ["Inter"], "display-lg": ["Plus Jakarta Sans"], "label-md": ["Inter"], "display-lg-mobile": ["Plus Jakarta Sans"], "title-md": ["Inter"], "code-sm": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "body-md": ["Inter"] }, "fontSize": { "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }], "display-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "title-md": ["16px", { "lineHeight": "22px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "code-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" }], "headline-lg": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-xl": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full bg-primary-container text-on-primary text-center py-1 px-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider font-bold">PROTOTYPE FOR HACKATHON DEMO • REALISTIC DEMO DATA ONLY</span></div><div class="h-20 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="Brand logo. - Primary color: #dc2626
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1V54_2iUIv540Vw4V7G9WuPta4ghnWEA04nsj6NVwr0-lfM5Vw_SUK8Tz9Pu6rdJRPw8AAf145izSADIZZNwMf7MwjVuGAE2RfWc_im03YNXF99g1k822A1XutYeuEL2Nx0bEnk-m3gdUJgMbXJjlApOfHFtxjLGTDCmJB52JKqIAjet9U0dHWNWQ-e_P_5FJDZv1OHmT58ljC-vbCB_16X4HRoGGiuHAfJLkqjo_dOjnwDiclVhUMM9Hs"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm font-bold text-on-surface truncate">BloodLink</span><div class="flex items-center gap-1 bg-surface-container px-2 py-0.5 rounded-full"><span class="w-1.5 h-1.5 rounded-full bg-tertiary-container animate-pulse"></span><span class="font-label-sm text-label-sm font-semibold text-tertiary">42 Banks Active</span></div></div><span class="font-label-sm text-label-sm text-secondary truncate">Dashboard</span></div></div><div class="flex items-center gap-space-xs"><button aria-label="Urgent notifications" class="relative w-11 h-11 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined">notifications</span><span class="absolute top-2 right-2 w-2.5 h-2.5 bg-primary rounded-full border-2 border-surface"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-20 pb-24 bg-surface"><div class="flex flex-col w-full">
+<div class="px-margin pt-space-xs pb-space-sm flex items-center justify-between">
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold flex items-center gap-1.5">
+<span class="inline-block w-2 h-2 rounded-full bg-primary animate-ping"></span>
+        Priority Dispatch Active
+      </span>
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight truncate">Good Morning, City Hospital</h1>
+<p class="font-body-sm text-body-sm text-secondary truncate">Trauma Center Unit 4 • Zone Metro-Alpha</p>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">medical_services</span>
+</div>
+</div>
+<div class="px-margin mb-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex flex-col gap-space-sm">
+<button class="w-full bg-primary-container text-on-primary font-headline-sm text-headline-sm py-3 px-space-md rounded-lg flex items-center justify-center gap-2 shadow-md active:scale-[0.98] transition-transform" id="btn-create-stat" type="button">
+<span class="material-symbols-outlined text-[24px] animate-pulse">add_alert</span>
+<span>+ Create Emergency Request</span>
+</button>
+<div class="flex items-center gap-2 overflow-x-auto pb-1 no-scrollbar">
+<span class="font-label-sm text-label-sm text-secondary uppercase whitespace-nowrap pl-1">1-Tap STAT:</span>
+<button class="bg-error-container text-on-error-container px-2.5 py-1.5 rounded-lg font-label-md text-label-md flex items-center gap-1 whitespace-nowrap active:bg-error transition-colors" onclick="quickPreset('O- Whole Blood', 'Bay 1')" type="button">
+<span class="font-bold">O-</span> Whole (2U)
+        </button>
+<button class="bg-surface-container text-on-surface px-2.5 py-1.5 rounded-lg font-label-md text-label-md flex items-center gap-1 whitespace-nowrap active:bg-surface-container-high transition-colors" onclick="quickPreset('O+ Platelets Apheresis', 'Trauma Bay 2')" type="button">
+<span class="font-bold">O+</span> Plt (2U)
+        </button>
+<button class="bg-surface-container text-on-surface px-2.5 py-1.5 rounded-lg font-label-md text-label-md flex items-center gap-1 whitespace-nowrap active:bg-surface-container-high transition-colors" onclick="quickPreset('AB- Cryo', 'OR 3')" type="button">
+<span class="font-bold">AB-</span> Cryo (4U)
+        </button>
+</div>
+</div>
+</div>
+<div class="px-margin mb-space-md">
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wide text-secondary font-semibold">Active Pipeline</span>
+<span class="flex h-2.5 w-2.5 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary"></span>
+</span>
+</div>
+<div class="flex items-baseline gap-1.5 my-0.5">
+<span class="font-headline-xl text-headline-xl font-bold text-on-surface">5</span>
+<span class="font-label-sm text-label-sm text-secondary">Requests</span>
+</div>
+<div class="flex items-center gap-1.5 pt-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> 2 Match
+          <span class="w-1.5 h-1.5 rounded-full bg-tertiary-container ml-1"></span> 3 Transit
+        </div>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex flex-col justify-between relative">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wide text-secondary font-semibold">STAT Release</span>
+<span class="material-symbols-outlined text-primary text-[18px]">emergency_heat</span>
+</div>
+<div class="flex items-baseline gap-1.5 my-0.5">
+<span class="font-headline-xl text-headline-xl font-bold text-primary">3</span>
+<span class="font-label-sm text-label-sm font-semibold text-primary">Critical Cases</span>
+</div>
+<div class="text-secondary font-body-sm text-body-sm truncate">
+          Awaiting Attending Sign
+        </div>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wide text-secondary font-semibold">Fulfillment</span>
+<span class="material-symbols-outlined text-tertiary text-[18px]">verified</span>
+</div>
+<div class="flex items-baseline gap-1.5 my-0.5">
+<span class="font-headline-xl text-headline-xl font-bold text-tertiary">94%</span>
+<span class="font-label-sm text-label-sm text-secondary">TAT</span>
+</div>
+<div class="flex items-center gap-1 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">timer</span>
+<span>14.2 min avg TAT</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wide text-secondary font-semibold">Mesh Status</span>
+<span class="material-symbols-outlined text-tertiary text-[18px]">hub</span>
+</div>
+<div class="flex items-baseline gap-1.5 my-0.5">
+<span class="font-headline-xl text-headline-xl font-bold text-on-surface">42</span>
+<span class="font-label-sm text-label-sm text-secondary">Banks Live</span>
+</div>
+<div class="flex items-center gap-1 text-tertiary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span>
+<span>99.4% synced</span>
+</div>
+</div>
+</div>
+</div>
+<div class="px-margin mb-space-sm flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Active Operations</span>
+<span class="bg-primary text-on-primary font-label-sm text-label-sm px-2 py-0.5 rounded-full" id="active-count-badge">5</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-low p-0.5 rounded-lg" id="filter-group">
+<button class="filter-pill active px-2.5 py-1 rounded-md font-label-sm text-label-sm transition-colors bg-surface-container-lowest text-on-surface shadow-xs font-semibold" data-filter="all" type="button">All (5)</button>
+<button class="filter-pill px-2.5 py-1 rounded-md font-label-sm text-label-sm transition-colors text-secondary hover:text-on-surface" data-filter="critical" type="button">Critical (3)</button>
+<button class="filter-pill px-2.5 py-1 rounded-md font-label-sm text-label-sm transition-colors text-secondary hover:text-on-surface" data-filter="urgent" type="button">Urgent (2)</button>
+</div>
+</div>
+<div class="px-margin flex flex-col gap-space-sm mb-space-md" id="cards-container">
+<div class="req-card bg-surface-container-lowest rounded-xl p-space-sm shadow-sm transition-all cursor-pointer relative" data-id="BL1024" data-tier="critical" onclick="toggleDetails('BL1024')">
+<div class="flex items-start justify-between gap-2 mb-2">
+<div class="flex items-center gap-2">
+<span class="bg-error-container text-on-error-container font-label-sm text-label-sm px-2 py-0.5 rounded-md font-bold uppercase flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+            Critical STAT
+          </span>
+<span class="font-code-sm text-code-sm text-secondary font-semibold">#BL1024</span>
+</div>
+<span class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm px-2 py-0.5 rounded-md font-medium">Trauma Bay 3</span>
+</div>
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center font-headline-sm text-headline-sm font-bold text-primary flex-shrink-0">
+            O+
+          </div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md font-bold text-on-surface truncate">Platelets (Apheresis)</span>
+<span class="font-body-sm text-body-sm text-secondary">2 Units Requested • Transfusion Priority 1</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-2 flex items-center justify-between text-body-sm font-body-sm">
+<div class="flex items-center gap-1 text-on-surface font-medium">
+<span class="material-symbols-outlined text-primary text-[18px]">near_me</span>
+<span>1.8 km (Memorial Blood Hub)</span>
+</div>
+<div class="flex items-center gap-1 text-tertiary font-semibold">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>94% Match</span>
+</div>
+</div>
+<div class="hidden pt-space-sm mt-space-sm flex flex-col gap-2" id="details-BL1024">
+<div class="flex items-center justify-between text-body-sm font-body-sm text-secondary">
+<span>Courier Unit: <b>Apex Courier #09</b></span>
+<span class="text-tertiary font-bold">ETA: 6 mins</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full w-3/4"></div>
+</div>
+<div class="flex gap-2 pt-1">
+<button class="flex-1 bg-surface-container text-on-surface font-label-md text-label-md py-2 rounded-lg flex items-center justify-center gap-1" onclick="event.stopPropagation(); alert('Contacting courier: +1 (555) 019-2834');" type="button">
+<span class="material-symbols-outlined text-[16px]">call</span> Call Courier
+          </button>
+<button class="flex-1 bg-primary text-on-primary font-label-md text-label-md py-2 rounded-lg flex items-center justify-center gap-1" onclick="event.stopPropagation(); alert('Direct Telemetry Opened');" type="button">
+<span class="material-symbols-outlined text-[16px]">navigation</span> Live Radar
+          </button>
+</div>
+</div>
+</div>
+<div class="req-card bg-surface-container-lowest rounded-xl p-space-sm shadow-sm transition-all cursor-pointer relative" data-id="BL1023" data-tier="urgent" onclick="toggleDetails('BL1023')">
+<div class="flex items-start justify-between gap-2 mb-2">
+<div class="flex items-center gap-2">
+<span class="bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm px-2 py-0.5 rounded-md font-bold uppercase">
+            Urgent
+          </span>
+<span class="font-code-sm text-code-sm text-secondary font-semibold">#BL1023</span>
+</div>
+<span class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm px-2 py-0.5 rounded-md font-medium">OR 2 (Neuro)</span>
+</div>
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center font-headline-sm text-headline-sm font-bold text-primary flex-shrink-0">
+            A-
+          </div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md font-bold text-on-surface truncate">Packed RBC</span>
+<span class="font-body-sm text-body-sm text-secondary">1 Unit • Crossmatch Pre-verified</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-2 flex items-center justify-between text-body-sm font-body-sm">
+<div class="flex items-center gap-1 text-on-surface font-medium">
+<span class="material-symbols-outlined text-secondary text-[18px]">location_on</span>
+<span>3.4 km (St. Jude Regional)</span>
+</div>
+<div class="flex items-center gap-1 text-secondary font-semibold">
+<span class="material-symbols-outlined text-[16px]">hourglass_top</span>
+<span>78% Match</span>
+</div>
+</div>
+<div class="hidden pt-space-sm mt-space-sm flex flex-col gap-2" id="details-BL1023">
+<p class="font-body-sm text-body-sm text-secondary">Screening antibodies complete. Dispatch vehicle assigned. Cold-chain box #CB-88 validated at 3.8°C.</p>
+<button class="w-full bg-secondary-container text-on-secondary-fixed font-label-md text-label-md py-2 rounded-lg" onclick="event.stopPropagation(); alert('Dispatched expedited route for BL1023');" type="button">
+          Expedite Transit Dispatch
+        </button>
+</div>
+</div>
+<div class="req-card bg-surface-container-lowest rounded-xl p-space-sm shadow-sm transition-all cursor-pointer relative" data-id="BL1022" data-tier="urgent" onclick="toggleDetails('BL1022')">
+<div class="flex items-start justify-between gap-2 mb-2">
+<div class="flex items-center gap-2">
+<span class="bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm px-2 py-0.5 rounded-md font-bold uppercase">
+            Urgent
+          </span>
+<span class="font-code-sm text-code-sm text-secondary font-semibold">#BL1022</span>
+</div>
+<span class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm px-2 py-0.5 rounded-md font-medium">ICU Bed 8</span>
+</div>
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center font-headline-sm text-headline-sm font-bold text-primary flex-shrink-0">
+            B+
+          </div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md font-bold text-on-surface truncate">Fresh Frozen Plasma</span>
+<span class="font-body-sm text-body-sm text-secondary">3 Units • Thawing Underway</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-2 flex items-center justify-between text-body-sm font-body-sm">
+<div class="flex items-center gap-1 text-on-surface font-medium">
+<span class="material-symbols-outlined text-secondary text-[18px]">navigation</span>
+<span>5.2 km (Westside BioBank)</span>
+</div>
+<div class="flex items-center gap-1 text-primary font-bold">
+<span class="material-symbols-outlined text-[16px]">priority_high</span>
+<span>Tier 2 Escalating</span>
+</div>
+</div>
+<div class="hidden pt-space-sm mt-space-sm flex flex-col gap-2" id="details-BL1022">
+<div class="bg-surface-container p-2 rounded-lg flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary">Search Radius:</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Auto-expanded to 15km</span>
+</div>
+<button class="w-full bg-primary text-on-primary font-label-md text-label-md py-2 rounded-lg" onclick="event.stopPropagation(); alert('Broadcasting to tier 3 network');" type="button">
+          Broadcast to Tier 3 Donors
+        </button>
+</div>
+</div>
+<div class="req-card bg-surface-container-lowest rounded-xl p-space-sm shadow-sm transition-all cursor-pointer relative" data-id="BL1020" data-tier="critical" onclick="toggleDetails('BL1020')">
+<div class="flex items-start justify-between gap-2 mb-2">
+<div class="flex items-center gap-2">
+<span class="bg-error-container text-on-error-container font-label-sm text-label-sm px-2 py-0.5 rounded-md font-bold uppercase flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+            Critical STAT
+          </span>
+<span class="font-code-sm text-code-sm text-secondary font-semibold">#BL1020</span>
+</div>
+<span class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm px-2 py-0.5 rounded-md font-medium">Trauma Bay 1</span>
+</div>
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-10 h-10 rounded-lg bg-error-container flex items-center justify-center font-headline-sm text-headline-sm font-bold text-primary flex-shrink-0">
+            O-
+          </div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md font-bold text-on-surface truncate">Whole Blood</span>
+<span class="font-body-sm text-body-sm text-secondary">4 Units • Severe Hemorrhagic Shock</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg p-2 flex items-center justify-between text-body-sm font-body-sm">
+<div class="flex items-center gap-1 text-on-surface font-medium">
+<span class="material-symbols-outlined text-primary text-[18px]">local_shipping</span>
+<span>0.8 km • En Route (2 mins)</span>
+</div>
+<div class="flex items-center gap-1 text-tertiary font-bold">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>98% Match</span>
+</div>
+</div>
+<div class="hidden pt-space-sm mt-space-sm flex flex-col gap-2" id="details-BL1020">
+<div class="p-2 bg-surface-container rounded-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary">ac_unit</span>
+<span class="font-body-sm text-body-sm text-on-surface">Cold chain continuous logging active: 4.1°C</span>
+</div>
+<button class="w-full bg-primary-container text-on-primary font-label-md text-label-md py-2 rounded-lg font-bold" onclick="event.stopPropagation(); alert('Emergency Bay notification pushed: Docking In 2 Mins');" type="button">
+          Signal Trauma Team Docking
+        </button>
+</div>
+</div>
+</div>
+<div class="px-margin mb-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[20px]">crisis_alert</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">Escalation Protocol</span>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container text-on-surface font-semibold px-2 py-0.5 rounded-full">
+          Autonomous
+        </span>
+</div>
+<div class="grid grid-cols-3 gap-2 text-center pt-1">
+<div class="bg-surface-container-low p-2 rounded-lg flex flex-col items-center">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Tier 1</span>
+<span class="font-code-sm text-code-sm font-bold text-tertiary mt-0.5">0-5m / 5km</span>
+<span class="font-label-sm text-label-sm text-tertiary mt-1 bg-surface-container px-1.5 py-0.5 rounded font-bold">ACTIVE</span>
+</div>
+<div class="bg-surface-container-low p-2 rounded-lg flex flex-col items-center">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Tier 2</span>
+<span class="font-code-sm text-code-sm font-bold text-on-surface mt-0.5">5-10m / 15km</span>
+<span class="font-label-sm text-label-sm text-secondary mt-1">Standby</span>
+</div>
+<div class="bg-surface-container-low p-2 rounded-lg flex flex-col items-center">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Tier 3</span>
+<span class="font-code-sm text-code-sm font-bold text-on-surface mt-0.5">10-15m / 35km</span>
+<span class="font-label-sm text-label-sm text-secondary mt-1">Standby</span>
+</div>
+</div>
+<button class="w-full bg-error-container hover:bg-primary hover:text-on-primary text-on-error-container font-label-md text-label-md py-2.5 rounded-lg flex items-center justify-center gap-1.5 font-bold transition-all shadow-xs" id="btn-code-red" onclick="triggerCodeRed()" type="button">
+<span class="material-symbols-outlined text-[18px]">fmd_bad</span>
+<span>Trigger Code Red Bypass</span>
+</button>
+</div>
+</div>
+<div class="px-margin mb-space-md">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-title-md text-title-md font-bold text-on-surface">Live Mesh Activity</span>
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container animate-pulse"></span>
+        Streaming
+      </span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-sm flex flex-col gap-space-sm" id="stream-container">
+<div class="flex items-start gap-2.5 pb-2 border-none">
+<div class="w-7 h-7 rounded-full bg-surface-container flex items-center justify-center text-primary flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">inventory_2</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface truncate">City Central Blood Bank</span>
+<span class="font-label-sm text-label-sm text-secondary">2m ago</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">Reserved 2 units O+ Apheresis Platelets for #BL1024</p>
+</div>
+</div>
+<div class="flex items-start gap-2.5 pb-2">
+<div class="w-7 h-7 rounded-full bg-surface-container flex items-center justify-center text-secondary flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">two_wheeler</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface truncate">Courier 09 Dispatched</span>
+<span class="font-label-sm text-label-sm text-secondary">4m ago</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">GPS ping recorded at 5th &amp; Broadway, speed 42 km/h</p>
+</div>
+</div>
+<div class="flex items-start gap-2.5">
+<div class="w-7 h-7 rounded-full bg-surface-container flex items-center justify-center text-tertiary flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface truncate">Metro South Lab</span>
+<span class="font-label-sm text-label-sm text-secondary">8m ago</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">Pre-transfusion crossmatch auto-cleared for Case #BL1023</p>
+</div>
+</div>
+</div>
+</div>
+<div class="fixed inset-0 z-50 bg-on-surface/40 backdrop-blur-sm hidden items-end sm:items-center justify-center p-0 sm:p-4" id="stat-modal">
+<div class="bg-surface-container-lowest w-full max-w-lg rounded-t-2xl sm:rounded-2xl p-space-md shadow-xl flex flex-col gap-space-md animate-in slide-in-from-bottom duration-200">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary animate-ping"></span>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">New STAT Request</h2>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-secondary" onclick="closeStatModal()" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-3">
+<div>
+<label class="font-label-sm text-label-sm uppercase text-secondary font-semibold block mb-1">Target Patient Location</label>
+<input class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md p-2.5 rounded-lg border-none focus:outline-none focus:ring-2 focus:ring-primary/20" id="modal-loc" type="text" value="Trauma Bay 2"/>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<div>
+<label class="font-label-sm text-label-sm uppercase text-secondary font-semibold block mb-1">Blood Group</label>
+<select class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md p-2.5 rounded-lg border-none focus:outline-none" id="modal-group">
+<option>O- Negative (Universal)</option>
+<option>O+ Positive</option>
+<option>A- Negative</option>
+<option>A+ Positive</option>
+<option>B+ Positive</option>
+<option>AB- Negative</option>
+</select>
+</div>
+<div>
+<label class="font-label-sm text-label-sm uppercase text-secondary font-semibold block mb-1">Product &amp; Volume</label>
+<select class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md p-2.5 rounded-lg border-none focus:outline-none" id="modal-product">
+<option>2 Units Whole Blood</option>
+<option>4 Units Whole Blood</option>
+<option>2 Units Apheresis Plt</option>
+<option>3 Units FFP Plasma</option>
+</select>
+</div>
+</div>
+</div>
+<div class="flex gap-2 pt-2">
+<button class="flex-1 bg-surface-container text-on-surface font-label-md text-label-md py-3 rounded-lg" onclick="closeStatModal()" type="button">Cancel</button>
+<button class="flex-2 bg-primary-container text-on-primary font-headline-sm text-headline-sm py-3 px-4 rounded-lg font-bold flex items-center justify-center gap-1" onclick="submitStatRequest()" type="button">
+<span class="material-symbols-outlined text-[20px]">broadcast_on_home</span>
+          Broadcast STAT
+        </button>
+</div>
+</div>
+</div>
+<script>
+    function toggleDetails(id) {
+      const detailsEl = document.getElementById('details-' + id);
+      if (detailsEl) {
+        detailsEl.classList.toggle('hidden');
+      }
+    }
+
+    const filterButtons = document.querySelectorAll('.filter-pill');
+    const cards = document.querySelectorAll('.req-card');
+    const countBadge = document.getElementById('active-count-badge');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => {
+          b.classList.remove('active', 'bg-surface-container-lowest', 'text-on-surface', 'shadow-xs', 'font-semibold');
+          b.classList.add('text-secondary');
+        });
+        btn.classList.add('active', 'bg-surface-container-lowest', 'text-on-surface', 'shadow-xs', 'font-semibold');
+        btn.classList.remove('text-secondary');
+
+        const filter = btn.getAttribute('data-filter');
+        let visibleCount = 0;
+
+        cards.forEach(card => {
+          const tier = card.getAttribute('data-tier');
+          if (filter === 'all' || tier === filter) {
+            card.style.display = 'block';
+            visibleCount++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        if (countBadge) {
+          countBadge.textContent = visibleCount;
+        }
+      });
+    });
+
+    const statModal = document.getElementById('stat-modal');
+    const btnCreateStat = document.getElementById('btn-create-stat');
+
+    if (btnCreateStat && statModal) {
+      btnCreateStat.addEventListener('click', () => {
+        statModal.classList.remove('hidden');
+        statModal.classList.add('flex');
+      });
+    }
+
+    function closeStatModal() {
+      if (statModal) {
+        statModal.classList.add('hidden');
+        statModal.classList.remove('flex');
+      }
+    }
+
+    function quickPreset(product, bay) {
+      const modalGroup = document.getElementById('modal-group');
+      const modalLoc = document.getElementById('modal-loc');
+      if (modalLoc) modalLoc.value = bay;
+      if (statModal) {
+        statModal.classList.remove('hidden');
+        statModal.classList.add('flex');
+      }
+    }
+
+    function submitStatRequest() {
+      const loc = document.getElementById('modal-loc').value;
+      const group = document.getElementById('modal-group').value;
+      const prod = document.getElementById('modal-product').value;
+      
+      const newCardId = 'BL' + Math.floor(1000 + Math.random() * 9000);
+      const container = document.getElementById('cards-container');
+      
+      const cardHtml = `
+        <div class="req-card bg-surface-container-lowest rounded-xl p-space-sm shadow-sm transition-all cursor-pointer relative animate-in fade-in" data-tier="critical" data-id="${newCardId}" onclick="toggleDetails('${newCardId}')">
+          <div class="flex items-start justify-between gap-2 mb-2">
+            <div class="flex items-center gap-2">
+              <span class="bg-error-container text-on-error-container font-label-sm text-label-sm px-2 py-0.5 rounded-md font-bold uppercase flex items-center gap-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                Critical STAT
+              </span>
+              <span class="font-code-sm text-code-sm text-secondary font-semibold">#${newCardId}</span>
+            </div>
+            <span class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm px-2 py-0.5 rounded-md font-medium">${loc}</span>
+          </div>
+          <div class="flex items-center justify-between mb-2">
+            <div class="flex items-center gap-2 min-w-0">
+              <div class="w-10 h-10 rounded-lg bg-error-container flex items-center justify-center font-headline-sm text-headline-sm font-bold text-primary flex-shrink-0">
+                ${group.split(' ')[0]}
+              </div>
+              <div class="flex flex-col min-w-0">
+                <span class="font-title-md text-title-md font-bold text-on-surface truncate">${prod}</span>
+                <span class="font-body-sm text-body-sm text-secondary">Stat Auto-Dispatch Initialized</span>
+              </div>
+            </div>
+          </div>
+          <div class="bg-surface-container-low rounded-lg p-2 flex items-center justify-between text-body-sm font-body-sm">
+            <div class="flex items-center gap-1 text-on-surface font-medium">
+              <span class="material-symbols-outlined text-primary text-[18px]">radar</span>
+              <span>Scanning 42 Regional Hubs...</span>
+            </div>
+            <div class="flex items-center gap-1 text-primary font-bold">
+              <span>Broadcasting</span>
+            </div>
+          </div>
+          <div id="details-${newCardId}" class="hidden pt-space-sm mt-space-sm flex flex-col gap-2">
+            <p class="font-body-sm text-body-sm text-secondary">Autonomous telemetry routing searching for immediate match across hospital mesh.</p>
+          </div>
+        </div>
+      `;
+      
+      container.insertAdjacentHTML('afterbegin', cardHtml);
+      closeStatModal();
+      
+      const stream = document.getElementById('stream-container');
+      const logHtml = `
+        <div class="flex items-start gap-2.5 pb-2 animate-in fade-in">
+          <div class="w-7 h-7 rounded-full bg-error-container flex items-center justify-center text-primary flex-shrink-0 mt-0.5">
+            <span class="material-symbols-outlined text-[16px]">priority_high</span>
+          </div>
+          <div class="flex flex-col min-w-0 flex-1">
+            <div class="flex items-center justify-between">
+              <span class="font-label-md text-label-md font-bold text-primary truncate">STAT Request Broadcast</span>
+              <span class="font-label-sm text-label-sm text-secondary">Just now</span>
+            </div>
+            <p class="font-body-sm text-body-sm text-secondary">Case #${newCardId} broadcast to Tier 1 local blood network</p>
+          </div>
+        </div>
+      `;
+      stream.insertAdjacentHTML('afterbegin', logHtml);
+    }
+
+    function triggerCodeRed() {
+      const btn = document.getElementById('btn-code-red');
+      if (btn) {
+        btn.classList.remove('bg-error-container', 'text-on-error-container');
+        btn.classList.add('bg-primary', 'text-on-primary');
+        btn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">sync</span> ALL TIERS BYPASSED • CODE RED ACTIVE';
+        setTimeout(() => {
+          alert('CODE RED PROTOCOL: Regional emergency blood mesh unlocked across 35km radius. 14 additional donor banks notified.');
+        }, 300);
+      }
+    }
+  </script>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.06)]" data-active-classes="text-primary font-semibold"><div class="flex justify-around items-center h-16 px-space-xs relative"><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-11 transition-colors text-primary font-semibold" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[22px]">emergency</span><span class="font-label-sm text-label-sm">Dashboard</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-11 text-on-surface-variant transition-colors" data-path="matching-radar" href="#"><span class="material-symbols-outlined text-[22px]">radar</span><span class="font-label-sm text-label-sm">Radar</span></a><div class="relative -top-3 flex items-center justify-center"><a aria-label="Create STAT Emergency Request" class="flex flex-col items-center justify-center w-14 h-14 rounded-full bg-primary-container text-on-primary shadow-lg active:scale-95 transition-transform" data-path="create-stat" href="#"><span class="material-symbols-outlined text-[28px]">add_alert</span></a></div><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-11 text-on-surface-variant transition-colors" data-path="track-transit" href="#"><span class="material-symbols-outlined text-[22px]">local_shipping</span><span class="font-label-sm text-label-sm">Transit</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-11 text-on-surface-variant transition-colors" data-path="urgent-alerts" href="#"><span class="material-symbols-outlined text-[22px]">warning</span><span class="font-label-sm text-label-sm">Alerts</span></a></div></nav></body></html>

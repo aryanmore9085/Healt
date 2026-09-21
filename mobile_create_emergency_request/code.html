@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary-container": "#dae2fd", "tertiary-fixed": "#6ffbbe", "on-secondary-fixed": "#131b2e", "on-error": "#ffffff", "surface-tint": "#bf0715", "surface-container-lowest": "#ffffff", "inverse-on-surface": "#eaf1ff", "on-tertiary-fixed-variant": "#005236", "on-surface": "#0b1c30", "on-primary-container": "#fff6f5", "tertiary-fixed-dim": "#4edea3", "background": "#f8f9ff", "tertiary-container": "#008259", "outline-variant": "#e6bdb8", "inverse-primary": "#ffb4ab", "surface-bright": "#f8f9ff", "on-tertiary-fixed": "#002113", "inverse-surface": "#213145", "surface-container-low": "#eff4ff", "on-secondary-fixed-variant": "#3f465c", "primary-fixed-dim": "#ffb4ab", "primary-container": "#dc2626", "surface-variant": "#d3e4fe", "tertiary": "#006645", "error-container": "#ffdad6", "on-primary-fixed-variant": "#93000b", "on-background": "#0b1c30", "surface-container": "#e5eeff", "surface-dim": "#cbdbf5", "secondary-fixed-dim": "#bec6e0", "on-tertiary-container": "#e1ffec", "primary": "#b70011", "on-primary": "#ffffff", "on-primary-fixed": "#410002", "on-tertiary": "#ffffff", "on-secondary-container": "#5c647a", "on-surface-variant": "#5c403c", "surface-container-high": "#dce9ff", "on-error-container": "#93000a", "secondary-fixed": "#dae2fd", "surface": "#f8f9ff", "outline": "#916f6b", "error": "#ba1a1a", "on-secondary": "#ffffff", "primary-fixed": "#ffdad6", "surface-container-highest": "#d3e4fe", "secondary": "#565e74" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1.5rem", "margin-desktop": "2rem", "space-sm": "0.5rem", "margin": "1rem", "space-xs": "0.25rem", "gutter-desktop": "1.5rem", "margin-tablet": "1.5rem", "space-md": "1rem", "gutter": "1.25rem", "space-xl": "2rem" }, "fontFamily": { "label-sm": ["Inter"], "body-sm": ["Inter"], "body-lg": ["Inter"], "display-lg": ["Plus Jakarta Sans"], "label-md": ["Inter"], "display-lg-mobile": ["Plus Jakarta Sans"], "title-md": ["Inter"], "code-sm": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "body-md": ["Inter"] }, "fontSize": { "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }], "display-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "title-md": ["16px", { "lineHeight": "22px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "code-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" }], "headline-lg": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-xl": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full bg-primary-container text-on-primary text-center py-1 px-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider font-bold">PROTOTYPE FOR HACKATHON DEMO • REALISTIC DEMO DATA ONLY</span></div><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs min-w-0"><button aria-label="Go back" class="w-11 h-11 flex items-center justify-center rounded-lg text-on-surface hover:bg-surface-container active:scale-95 transition-all" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="Brand logo. - Primary color: #dc2626
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-md
+" class="h-7 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1V54_2iUIv540Vw4V7G9WuPta4ghnWEA04nsj6NVwr0-lfM5Vw_SUK8Tz9Pu6rdJRPw8AAf145izSADIZZNwMf7MwjVuGAE2RfWc_im03YNXF99g1k822A1XutYeuEL2Nx0bEnk-m3gdUJgMbXJjlApOfHFtxjLGTDCmJB52JKqIAjet9U0dHWNWQ-e_P_5FJDZv1OHmT58ljC-vbCB_16X4HRoGGiuHAfJLkqjo_dOjnwDiclVhUMM9Hs"/><span class="font-headline-sm text-headline-sm font-bold text-on-surface truncate">Create Stat</span></div><div class="flex items-center gap-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 bg-surface"><div class="flex flex-col w-full pb-32">
+<!-- Urgency & Protocol Banner -->
+<div class="sticky top-0 z-40 bg-error-container text-on-error-container px-margin py-space-xs shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary"></span>
+</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider truncate text-on-error-container">Protocol Tier: Level-1 STAT</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-lowest/80 px-2 py-0.5 rounded-full text-on-surface shadow-xs flex-shrink-0">
+<span class="material-symbols-outlined text-[14px] text-primary">radar</span>
+<span class="font-code-sm text-code-sm font-semibold">5km Radius</span>
+</div>
+</div>
+<!-- Form Container -->
+<div class="flex flex-col gap-space-md p-margin">
+<!-- Step 1: Blood Group Selector -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-label-sm text-label-sm">1</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Blood Group Required</h2>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-primary text-on-primary font-bold" id="selected-type-badge">O- SELECTED</span>
+</div>
+<!-- 4x2 Grid of Blood Groups -->
+<div class="grid grid-cols-4 gap-2" id="blood-groups-grid">
+<button class="blood-group-btn h-14 rounded-lg bg-primary text-on-primary font-headline-sm text-headline-sm font-bold shadow-sm transition-all active:scale-95 flex flex-col items-center justify-center" data-group="O-" type="button">
+<span>O-</span>
+<span class="font-label-sm text-[10px] opacity-80 uppercase tracking-tighter">Universal</span>
+</button>
+<button class="blood-group-btn h-14 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-headline-sm text-headline-sm font-bold transition-all active:scale-95 flex flex-col items-center justify-center" data-group="O+" type="button">
+<span>O+</span>
+<span class="font-label-sm text-[10px] opacity-70">High Demand</span>
+</button>
+<button class="blood-group-btn h-14 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-headline-sm text-headline-sm font-bold transition-all active:scale-95 flex flex-col items-center justify-center" data-group="A-" type="button">
+<span>A-</span>
+<span class="font-label-sm text-[10px] opacity-70">Platelet Pri</span>
+</button>
+<button class="blood-group-btn h-14 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-headline-sm text-headline-sm font-bold transition-all active:scale-95 flex flex-col items-center justify-center" data-group="A+" type="button">
+<span>A+</span>
+<span class="font-label-sm text-[10px] opacity-70">Standard</span>
+</button>
+<button class="blood-group-btn h-14 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-headline-sm text-headline-sm font-bold transition-all active:scale-95 flex flex-col items-center justify-center" data-group="B-" type="button">
+<span>B-</span>
+<span class="font-label-sm text-[10px] opacity-70">Critical</span>
+</button>
+<button class="blood-group-btn h-14 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-headline-sm text-headline-sm font-bold transition-all active:scale-95 flex flex-col items-center justify-center" data-group="B+" type="button">
+<span>B+</span>
+<span class="font-label-sm text-[10px] opacity-70">Standard</span>
+</button>
+<button class="blood-group-btn h-14 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-headline-sm text-headline-sm font-bold transition-all active:scale-95 flex flex-col items-center justify-center" data-group="AB-" type="button">
+<span>AB-</span>
+<span class="font-label-sm text-[10px] opacity-70">Rare</span>
+</button>
+<button class="blood-group-btn h-14 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-headline-sm text-headline-sm font-bold transition-all active:scale-95 flex flex-col items-center justify-center" data-group="AB+" type="button">
+<span>AB+</span>
+<span class="font-label-sm text-[10px] opacity-70">Universal Rec</span>
+</button>
+</div>
+</div>
+<!-- Step 2: Target Blood Component -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center gap-space-xs mb-space-sm">
+<span class="w-6 h-6 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-label-sm text-label-sm">2</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Target Component</h2>
+</div>
+<div class="grid grid-cols-2 gap-space-sm" id="components-grid">
+<button class="component-card text-left p-space-sm rounded-xl bg-primary text-on-primary shadow-sm transition-all active:scale-95 flex flex-col justify-between h-24" data-component="Packed RBC" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="material-symbols-outlined text-[24px]">bloodtype</span>
+<span class="material-symbols-outlined text-[18px] check-icon">check_circle</span>
+</div>
+<div>
+<div class="font-title-md text-title-md font-bold">Packed RBC</div>
+<div class="font-body-sm text-[11px] opacity-80">Trauma &amp; Resuscitation</div>
+</div>
+</button>
+<button class="component-card text-left p-space-sm rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high shadow-xs transition-all active:scale-95 flex flex-col justify-between h-24" data-component="Whole Blood" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="material-symbols-outlined text-[24px] text-primary">water_drop</span>
+<span class="material-symbols-outlined text-[18px] text-secondary opacity-0 check-icon">check_circle</span>
+</div>
+<div>
+<div class="font-title-md text-title-md font-bold">Whole Blood</div>
+<div class="font-body-sm text-[11px] text-secondary">Massive Transfusion</div>
+</div>
+</button>
+<button class="component-card text-left p-space-sm rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high shadow-xs transition-all active:scale-95 flex flex-col justify-between h-24" data-component="Platelets" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="material-symbols-outlined text-[24px] text-primary">grain</span>
+<span class="material-symbols-outlined text-[18px] text-secondary opacity-0 check-icon">check_circle</span>
+</div>
+<div>
+<div class="font-title-md text-title-md font-bold">Platelets</div>
+<div class="font-body-sm text-[11px] text-secondary">Single-Donor Apheresis</div>
+</div>
+</button>
+<button class="component-card text-left p-space-sm rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high shadow-xs transition-all active:scale-95 flex flex-col justify-between h-24" data-component="Plasma" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="material-symbols-outlined text-[24px] text-primary">opacity</span>
+<span class="material-symbols-outlined text-[18px] text-secondary opacity-0 check-icon">check_circle</span>
+</div>
+<div>
+<div class="font-title-md text-title-md font-bold">Plasma (FFP)</div>
+<div class="font-body-sm text-[11px] text-secondary">Coagulopathy Support</div>
+</div>
+</button>
+</div>
+</div>
+<!-- Step 3: Quantity Stepper & Quick Select -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-label-sm text-label-sm">3</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Volume &amp; Units</h2>
+</div>
+<span class="font-code-sm text-code-sm text-secondary bg-surface-container-low px-2 py-0.5 rounded">~250mL / Unit</span>
+</div>
+<!-- Stepper Controller -->
+<div class="flex items-center justify-between bg-surface-container-low rounded-xl p-space-xs mb-space-sm">
+<button aria-label="Decrease quantity" class="w-12 h-12 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container active:scale-95 transition-all flex items-center justify-center shadow-xs" id="btn-decrement" type="button">
+<span class="material-symbols-outlined text-[24px]">remove</span>
+</button>
+<div class="flex flex-col items-center">
+<div class="flex items-baseline gap-1">
+<span class="font-display-lg-mobile text-display-lg-mobile font-bold text-on-surface" id="units-display">2</span>
+<span class="font-title-md text-title-md font-semibold text-secondary">Units</span>
+</div>
+<span class="font-code-sm text-code-sm text-secondary" id="ml-display">(~500 mL Total)</span>
+</div>
+<button aria-label="Increase quantity" class="w-12 h-12 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container active:scale-95 transition-all flex items-center justify-center shadow-xs" id="btn-increment" type="button">
+<span class="material-symbols-outlined text-[24px]">add</span>
+</button>
+</div>
+<!-- Quick Preset Pills -->
+<div class="grid grid-cols-4 gap-2" id="quick-pills">
+<button class="quick-pill py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md text-center hover:bg-surface-container-high active:scale-95 transition-all" data-val="1" type="button">1 Unit</button>
+<button class="quick-pill py-2 rounded-lg bg-secondary-container text-on-secondary-fixed font-label-md text-label-md font-bold text-center active:scale-95 transition-all" data-val="2" type="button">2 Units</button>
+<button class="quick-pill py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md text-center hover:bg-surface-container-high active:scale-95 transition-all" data-val="4" type="button">4 Units</button>
+<button class="quick-pill py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md text-center hover:bg-surface-container-high active:scale-95 transition-all" data-val="6" type="button">6 (MTP)</button>
+</div>
+</div>
+<!-- Step 4: Urgency & Triage Classification -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center gap-space-xs mb-space-sm">
+<span class="w-6 h-6 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-label-sm text-label-sm">4</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Urgency &amp; Triage</h2>
+</div>
+<div class="flex flex-col gap-2" id="urgency-selector">
+<!-- Critical STAT (Default Active) -->
+<button class="urgency-option text-left p-space-sm rounded-xl bg-error-container text-on-error-container shadow-md flex items-center justify-between transition-all" data-urgency="stat" type="button">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-primary text-on-primary flex items-center justify-center flex-shrink-0 animate-pulse">
+<span class="material-symbols-outlined text-[24px]">e911_emergency</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-title-md text-title-md font-bold text-primary">Critical STAT</span>
+<span class="font-label-sm text-[10px] px-1.5 py-0.5 rounded bg-primary text-on-primary uppercase font-bold">CODE RED</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Active hemorrhage • Rapid response &lt;30m</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-[22px] urgency-radio">radio_button_checked</span>
+</button>
+<!-- Urgent Card -->
+<button class="urgency-option text-left p-space-sm rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container shadow-xs flex items-center justify-between transition-all" data-urgency="urgent" type="button">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-secondary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">acute</span>
+</div>
+<div class="min-w-0">
+<div class="font-title-md text-title-md font-semibold text-on-surface">Urgent</div>
+<p class="font-body-sm text-body-sm text-secondary truncate">Operating room queued • Expected &lt;2 hrs</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-[22px] urgency-radio">radio_button_unchecked</span>
+</button>
+<!-- Routine Card -->
+<button class="urgency-option text-left p-space-sm rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container shadow-xs flex items-center justify-between transition-all" data-urgency="routine" type="button">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-secondary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">schedule</span>
+</div>
+<div class="min-w-0">
+<div class="font-title-md text-title-md font-semibold text-on-surface">Routine / Scheduled</div>
+<p class="font-body-sm text-body-sm text-secondary truncate">Elective surgical prep • Within 6 hrs</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-[22px] urgency-radio">radio_button_unchecked</span>
+</button>
+</div>
+</div>
+<!-- Step 5: Receiving Facility & Clinical Notes -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-label-sm text-label-sm">5</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Delivery Node &amp; Protocol</h2>
+</div>
+<!-- Facility Input -->
+<div>
+<label class="font-label-sm text-label-sm text-secondary block mb-1 uppercase tracking-wider">Destination Trauma Bay</label>
+<div class="flex items-center gap-2">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3 top-3 text-[20px] text-secondary">local_hospital</span>
+<input class="w-full bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg pl-10 pr-3 py-2.5 focus:outline-none focus:bg-surface-container" id="facility-input" type="text" value="City Memorial Hospital - Trauma Bay 2"/>
+</div>
+<button class="h-11 px-3 bg-secondary-container text-on-secondary-fixed rounded-lg font-label-md text-label-md flex items-center gap-1 active:scale-95 transition-all flex-shrink-0" id="btn-gps" type="button">
+<span class="material-symbols-outlined text-[18px]">my_location</span>
+<span>GPS</span>
+</button>
+</div>
+</div>
+<!-- Anonymized Clinical Note -->
+<div class="bg-surface-container-low rounded-lg p-space-sm">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+            HIPAA-Protected Note
+          </span>
+<span class="font-code-sm text-[11px] text-tertiary font-semibold">Anonymized Token: #TR-9041</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface italic">
+          "Trauma Code Red, adult male blunt force thoracic impact, cross-match pending. Platelets needed urgently upon bay arrival."
+        </p>
+</div>
+<!-- Escalation Radius Expansion Toggle -->
+<div class="flex items-center justify-between pt-1">
+<div class="min-w-0 pr-2">
+<div class="font-title-md text-body-md font-semibold text-on-surface">Auto-Escalate Radial Scan</div>
+<div class="font-body-sm text-[11px] text-secondary">Auto-expands 5km → 10km → 25km if unmatched in 3 min</div>
+</div>
+<button aria-checked="true" class="w-12 h-6 bg-tertiary-container rounded-full p-0.5 transition-colors relative flex-shrink-0" id="toggle-escalate" role="switch" type="button">
+<div class="w-5 h-5 bg-surface-container-lowest rounded-full shadow-xs transform translate-x-6 transition-transform" id="escalate-dot"></div>
+</button>
+</div>
+</div>
+<!-- Active Telemetry Stat Strip -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-xs flex items-center gap-space-xs">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">medical_services</span>
+</div>
+<div class="min-w-0">
+<div class="font-label-sm text-[11px] text-secondary truncate">Donor Network</div>
+<div class="font-title-md text-title-md font-bold text-on-surface">18 Nodes Active</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-sm shadow-xs flex items-center gap-space-xs">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-tertiary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">electric_bolt</span>
+</div>
+<div class="min-w-0">
+<div class="font-label-sm text-[11px] text-secondary truncate">Avg Response</div>
+<div class="font-title-md text-title-md font-bold text-tertiary">4.8 min STAT</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Sticky Action Bar -->
+<div class="fixed bottom-0 left-0 right-0 z-40 bg-surface/95 backdrop-blur-xl p-margin pb-safe shadow-[0_-4px_20px_rgba(0,0,0,0.06)] flex flex-col gap-2">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-semibold" id="bottom-summary-text">O- Packed RBC • 2 Units</span>
+</div>
+<div class="text-secondary font-code-sm text-code-sm">
+        Dispatch Radius: <span class="text-on-surface font-semibold">5.0 km</span>
+</div>
+</div>
+<button class="w-full h-14 rounded-xl bg-primary text-on-primary font-headline-sm text-headline-sm font-bold shadow-md hover:bg-surface-tint active:scale-[0.98] transition-all flex items-center justify-center gap-2" id="btn-submit-request" type="button">
+<span class="material-symbols-outlined text-[22px]">send</span>
+<span>Broadcast Emergency STAT Request</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+<!-- Simulation Verification Modal Overlay -->
+<div class="fixed inset-0 z-50 bg-on-surface/60 backdrop-blur-sm hidden flex items-center justify-center p-margin" id="sim-modal">
+<div class="bg-surface-container-lowest w-full max-w-sm rounded-2xl p-space-lg shadow-xl flex flex-col items-center text-center">
+<!-- Animated Status Icon -->
+<div class="relative w-20 h-20 mb-space-md flex items-center justify-center" id="modal-spinner-container">
+<svg class="animate-spin w-20 h-20 text-surface-container-high" fill="none" viewbox="0 0 24 24">
+<circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+<path class="opacity-75" d="M4 12a8 8 0 018-8v8H4z" fill="currentColor"></path>
+</svg>
+<span class="material-symbols-outlined text-primary text-[32px] absolute">bloodtype</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg font-bold text-on-surface mb-1" id="modal-title">Checking Compatibility...</h3>
+<p class="font-body-md text-body-md text-secondary mb-space-lg" id="modal-subtitle">Synthesizing clinical blood stock across regional hubs within 5km.</p>
+<!-- Match Progress Bar -->
+<div class="w-full bg-surface-container-low rounded-full h-2 mb-space-md overflow-hidden">
+<div class="bg-primary h-full w-1/4 transition-all duration-500 rounded-full" id="modal-progress"></div>
+</div>
+<div class="hidden bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-full font-label-md text-label-md font-bold mb-space-lg items-center gap-1.5 animate-bounce" id="matches-badge-pill">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Found 12 Compatible Units STAT</span>
+</div>
+<button class="w-full py-3 rounded-lg bg-primary text-on-primary font-headline-sm text-headline-sm font-bold shadow-sm active:scale-95 transition-all hidden" id="modal-dismiss-btn" type="button">
+        Open Tactical Transit Radar →
+      </button>
+</div>
+</div>
+</div>
+<script>
+  (function initEmergencyRequestForm() {
+    let currentGroup = 'O-';
+    let currentComponent = 'Packed RBC';
+    let units = 2;
+    let autoEscalate = true;
+
+    const selectedTypeBadge = document.getElementById('selected-type-badge');
+    const bottomSummary = document.getElementById('bottom-summary-text');
+    const unitsDisplay = document.getElementById('units-display');
+    const mlDisplay = document.getElementById('ml-display');
+
+    function updateSummary() {
+      if (selectedTypeBadge) selectedTypeBadge.textContent = currentGroup + ' SELECTED';
+      if (unitsDisplay) unitsDisplay.textContent = units;
+      if (mlDisplay) mlDisplay.textContent = '(~' + (units * 250) + ' mL Total)';
+      if (bottomSummary) bottomSummary.textContent = currentGroup + ' ' + currentComponent + ' • ' + units + ' Unit' + (units > 1 ? 's' : '');
+    }
+
+    // 1. Blood Group Buttons
+    const groupButtons = document.querySelectorAll('.blood-group-btn');
+    groupButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        groupButtons.forEach(b => {
+          b.className = 'blood-group-btn h-14 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-headline-sm text-headline-sm font-bold transition-all active:scale-95 flex flex-col items-center justify-center';
+        });
+        btn.className = 'blood-group-btn h-14 rounded-lg bg-primary text-on-primary font-headline-sm text-headline-sm font-bold shadow-sm transition-all active:scale-95 flex flex-col items-center justify-center';
+        currentGroup = btn.getAttribute('data-group');
+        updateSummary();
+      });
+    });
+
+    // 2. Target Component Cards
+    const compCards = document.querySelectorAll('.component-card');
+    compCards.forEach(card => {
+      card.addEventListener('click', () => {
+        compCards.forEach(c => {
+          c.className = 'component-card text-left p-space-sm rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high shadow-xs transition-all active:scale-95 flex flex-col justify-between h-24';
+          const icon = c.querySelector('.check-icon');
+          if (icon) icon.classList.add('opacity-0');
+        });
+        card.className = 'component-card text-left p-space-sm rounded-xl bg-primary text-on-primary shadow-sm transition-all active:scale-95 flex flex-col justify-between h-24';
+        const icon = card.querySelector('.check-icon');
+        if (icon) icon.classList.remove('opacity-0');
+        currentComponent = card.getAttribute('data-component');
+        updateSummary();
+      });
+    });
+
+    // 3. Units Stepper & Pills
+    const btnDec = document.getElementById('btn-decrement');
+    const btnInc = document.getElementById('btn-increment');
+    const quickPills = document.querySelectorAll('.quick-pill');
+
+    function syncPills() {
+      quickPills.forEach(p => {
+        const val = parseInt(p.getAttribute('data-val'), 10);
+        if (val === units) {
+          p.className = 'quick-pill py-2 rounded-lg bg-secondary-container text-on-secondary-fixed font-label-md text-label-md font-bold text-center active:scale-95 transition-all';
+        } else {
+          p.className = 'quick-pill py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md text-center hover:bg-surface-container-high active:scale-95 transition-all';
+        }
+      });
+    }
+
+    if (btnDec) {
+      btnDec.addEventListener('click', () => {
+        if (units > 1) {
+          units--;
+          syncPills();
+          updateSummary();
+        }
+      });
+    }
+
+    if (btnInc) {
+      btnInc.addEventListener('click', () => {
+        if (units < 12) {
+          units++;
+          syncPills();
+          updateSummary();
+        }
+      });
+    }
+
+    quickPills.forEach(p => {
+      p.addEventListener('click', () => {
+        units = parseInt(p.getAttribute('data-val'), 10);
+        syncPills();
+        updateSummary();
+      });
+    });
+
+    // 4. Urgency Options
+    const urgencyOptions = document.querySelectorAll('.urgency-option');
+    urgencyOptions.forEach(opt => {
+      opt.addEventListener('click', () => {
+        urgencyOptions.forEach(o => {
+          o.className = 'urgency-option text-left p-space-sm rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container shadow-xs flex items-center justify-between transition-all';
+          const r = o.querySelector('.urgency-radio');
+          if (r) {
+            r.textContent = 'radio_button_unchecked';
+            r.className = 'material-symbols-outlined text-secondary text-[22px] urgency-radio';
+          }
+        });
+
+        opt.className = 'urgency-option text-left p-space-sm rounded-xl bg-error-container text-on-error-container shadow-md flex items-center justify-between transition-all';
+        const radio = opt.querySelector('.urgency-radio');
+        if (radio) {
+          radio.textContent = 'radio_button_checked';
+          radio.className = 'material-symbols-outlined text-primary text-[22px] urgency-radio';
+        }
+      });
+    });
+
+    // 5. GPS Geolocation mock
+    const btnGps = document.getElementById('btn-gps');
+    const facilityInput = document.getElementById('facility-input');
+    if (btnGps && facilityInput) {
+      btnGps.addEventListener('click', () => {
+        facilityInput.value = 'Locating...';
+        setTimeout(() => {
+          facilityInput.value = 'St. Jude Acute Center (GPS: 37.7749° N, -122.4194° W)';
+        }, 500);
+      });
+    }
+
+    // Escalation Switch Toggle
+    const toggleEscalate = document.getElementById('toggle-escalate');
+    const escalateDot = document.getElementById('escalate-dot');
+    if (toggleEscalate && escalateDot) {
+      toggleEscalate.addEventListener('click', () => {
+        autoEscalate = !autoEscalate;
+        toggleEscalate.setAttribute('aria-checked', autoEscalate ? 'true' : 'false');
+        if (autoEscalate) {
+          toggleEscalate.classList.remove('bg-surface-variant');
+          toggleEscalate.classList.add('bg-tertiary-container');
+          escalateDot.classList.add('translate-x-6');
+        } else {
+          toggleEscalate.classList.remove('bg-tertiary-container');
+          toggleEscalate.classList.add('bg-surface-variant');
+          escalateDot.classList.remove('translate-x-6');
+        }
+      });
+    }
+
+    // Modal Simulation Trigger
+    const btnSubmit = document.getElementById('btn-submit-request');
+    const modal = document.getElementById('sim-modal');
+    const modalTitle = document.getElementById('modal-title');
+    const modalSubtitle = document.getElementById('modal-subtitle');
+    const modalProgress = document.getElementById('modal-progress');
+    const matchesBadge = document.getElementById('matches-badge-pill');
+    const modalDismiss = document.getElementById('modal-dismiss-btn');
+
+    if (btnSubmit && modal) {
+      btnSubmit.addEventListener('click', () => {
+        modal.classList.remove('hidden');
+        modalProgress.style.width = '35%';
+        modalTitle.textContent = 'Checking Compatibility...';
+        modalSubtitle.textContent = 'Contacting 18 hospital blood banks within a 5.0 km emergency radius...';
+        matchesBadge.classList.add('hidden');
+        modalDismiss.classList.add('hidden');
+
+        setTimeout(() => {
+          modalProgress.style.width = '70%';
+          modalTitle.textContent = 'Reserving Units...';
+          modalSubtitle.textContent = 'Locking cold-chain inventory for blood group ' + currentGroup + '...';
+        }, 1100);
+
+        setTimeout(() => {
+          modalProgress.style.width = '100%';
+          modalTitle.textContent = 'Emergency Request Active!';
+          modalSubtitle.textContent = 'Telemetry verified. 12 matching donor units secured across 3 regional trauma centers.';
+          matchesBadge.classList.remove('hidden');
+          matchesBadge.classList.add('flex');
+          modalDismiss.classList.remove('hidden');
+        }, 2200);
+      });
+    }
+
+    if (modalDismiss) {
+      modalDismiss.addEventListener('click', () => {
+        modal.classList.add('hidden');
+      });
+    }
+
+    updateSummary();
+  })();
+</script></main></body></html>
